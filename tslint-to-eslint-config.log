@@ -1,0 +1,31 @@
+1 ESLint rule behaves differently from its TSLint counterpart:
+  * @typescript-eslint/no-unused-expressions:
+    - The TSLint optional config "allow-new" is the default ESLint behavior and will no longer be ignored.
+
+Could not resolve ESLint extension 'eslint-plugin-standard-with-typescript'.: Error: Cannot find module '/workspace/vs-redoc-viewer/eslint-plugin-standard-with-typescript'
+Require stack:
+- /home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/adapters/nativeImporter.js
+- /home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/api/dependencies.js
+- /home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/cli/main.js
+- /home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/bin/tslint-to-eslint-config
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at /home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/adapters/nativeImporter.js:29:64
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at Object.nativeImporter (/home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/adapters/nativeImporter.js:29:16)
+    at importFile (/home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/input/importer.js:33:20)
+    at importer (/home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/input/importer.js:51:28)
+    at /home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/converters/lintConfigs/summarization/retrieveExtendsValues.js:47:26
+    at Function.all (<anonymous>:null:null)
+    at retrieveExtendsValues (/home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/converters/lintConfigs/summarization/retrieveExtendsValues.js:33:5)
+    at summarizePackageRules (/home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/converters/lintConfigs/summarization/summarizePackageRules.js:29:57)
+    at createESLintConfiguration (/home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/converters/lintConfigs/createESLintConfiguration.js:8:12)
+    at convertLintConfig (/home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/converters/lintConfigs/convertLintConfig.js:13:37)
+    at tryConvertConfig (/home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/cli/runCli.js:64:18)
+    at runCli (/home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/cli/runCli.js:50:24)
+    at Object.main (/home/gitpod/.npm/_npx/ab091f4918e92575/node_modules/tslint-to-eslint-config/src/cli/main.js:11:30)
+
+
+
