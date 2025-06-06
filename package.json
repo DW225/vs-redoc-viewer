@@ -103,7 +103,7 @@
     "eslint-plugin-n": "^15.5.1",
     "eslint-plugin-promise": "^6.1.1",
     "glob": "^8.0.3",
-    "mocha": "^10.1.0",
+    "mocha": "^10.8.2",
     "prettier": "2.7.1",
     "typescript": "^4.8.4"
   },
